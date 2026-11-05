@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)https://lenaarc.github.io/SIGOF/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGOF - Sistema de Gestión de Oficios Judiciales</title>
     <style>
@@ -60,6 +60,7 @@
 
         .badge-status { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; display: inline-block; white-space: nowrap; }
         .status-green { background: #d1fae5; color: #065f46; }
+        .status-blue { background: #dbeafe; color: #1e40af; }
         .status-amber { background: #fef3c7; color: #92400e; }
         .status-orange { background: #ffedd5; color: #c2410c; }
         .status-red { background: #fee2e2; color: #991b1b; }
@@ -107,7 +108,7 @@
     <!-- BARRA SUPERIOR -->
     <header>
         <div class="logo-area">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path></svg>
             <span>SIGOF</span>
             <span class="badge-cloud">Sistema Web Activo (BPM)</span>
         </div>
@@ -126,40 +127,40 @@
         <aside>
             <div>
                 <div class="menu-title">Módulos de Gestión</div>
-                <button type="button" onclick="navigate('P-04')" id="btn-P-04" class="nav-btn active">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                <button type="button" onclick="navigate('P-04')" id="btn-P-04" class="nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
                     P-04 Dashboard / Inicio
                 </button>
                 <button type="button" onclick="navigate('P-05')" id="btn-P-05" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
                     P-05 Registrar Oficio (OCR)
                     <span class="badge-nav" style="background:#2563eb; color:white;">OCR</span>
                 </button>
-                <button type="button" onclick="navigate('P-06')" id="btn-P-06" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <button type="button" onclick="navigate('P-06')" id="btn-P-06" class="nav-btn active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                     P-06 Bandeja Emitidos
                 </button>
                 <button type="button" onclick="navigate('P-07')" id="btn-P-07" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
                     P-07 Bandeja Por Firmar
                 </button>
                 <button type="button" onclick="navigate('P-08')" id="btn-P-08" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg>
                     P-08 Firmados y Cargo
                 </button>
                 <button type="button" onclick="navigate('P-09')" id="btn-P-09" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                     P-09 Seguimiento (10d)
                     <span class="badge-nav" style="background:#d97706; color:white;">10d</span>
                 </button>
                 <button type="button" onclick="navigate('P-10')" id="btn-P-10" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
                     P-10 Reportes y Métricas
                 </button>
                 
                 <div class="menu-title" style="margin-top: 24px;">Autenticación</div>
                 <button type="button" onclick="navigate('P-02')" id="btn-P-02" class="nav-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
                     P-01 a P-03 Login / Registro
                 </button>
             </div>
@@ -232,7 +233,7 @@
             </section>
 
             <!-- P-04: DASHBOARD -->
-            <section id="P-04" class="screen-section">
+            <section id="P-04" class="screen-section hidden">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
                     <div>
                         <h1 style="font-size: 22px; font-weight: 800; color: #0f172a;">Panel Principal (P-04 Dashboard)</h1>
@@ -249,7 +250,7 @@
                             <div class="metric-value">128</div>
                         </div>
                         <div class="icon-box blue-box">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                         </div>
                     </div>
                     <div class="metric-card">
@@ -258,7 +259,7 @@
                             <div class="metric-value">94</div>
                         </div>
                         <div class="icon-box green-box">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                         </div>
                     </div>
                     <div class="metric-card">
@@ -267,7 +268,7 @@
                             <div class="metric-value">12</div>
                         </div>
                         <div class="icon-box amber-box">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
                         </div>
                     </div>
                     <div class="metric-card">
@@ -276,7 +277,7 @@
                             <div class="metric-value">3</div>
                         </div>
                         <div class="icon-box red-box">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
                         </div>
                     </div>
                 </div>
@@ -322,10 +323,10 @@
                                     <td>
                                         <div class="btn-action-group">
                                             <button type="button" onclick="openPdfModal('OF-2026-089-JCC', 'cargado')" class="btn-secondary" title="Ver Oficio Cargado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Oficio
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Oficio
                                             </button>
                                             <button type="button" onclick="openPdfModal('OF-2026-089-JCC', 'recepcionado')" class="btn-secondary" title="Ver Oficio Recepcionado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Cargo
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Cargo
                                             </button>
                                             <button type="button" onclick="notifySecretary('OF-2026-089-JCC', 8)" class="btn-secondary" style="color: #d97706; border-color: #fde68a;" title="Notificar a Secretario Judicial">
                                                 🔔 Notificar
@@ -351,10 +352,10 @@
                                     <td>
                                         <div class="btn-action-group">
                                             <button type="button" onclick="openPdfModal('OF-2026-090-JCC', 'cargado')" class="btn-secondary" title="Ver Oficio Cargado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Oficio
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Oficio
                                             </button>
                                             <button type="button" onclick="openPdfModal('OF-2026-090-JCC', 'recepcionado')" class="btn-secondary" title="Ver Oficio Recepcionado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Cargo
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Cargo
                                             </button>
                                             <button type="button" onclick="notifySecretary('OF-2026-090-JCC', 3)" class="btn-secondary" style="opacity: 0.6;" title="Sin alerta crítica">
                                                 🔔 Notificar
@@ -380,10 +381,10 @@
                                     <td>
                                         <div class="btn-action-group">
                                             <button type="button" onclick="openPdfModal('OF-2026-091-JCC', 'cargado')" class="btn-secondary" title="Ver Oficio Cargado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Oficio
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Oficio
                                             </button>
                                             <button type="button" onclick="openPdfModal('OF-2026-091-JCC', 'recepcionado')" class="btn-secondary" title="Ver Oficio Recepcionado">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Cargo
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg> Cargo
                                             </button>
                                             <button type="button" onclick="alert('🔄 Oficio OF-2026-091-JCC re-oficiado y reiterado automáticamente con copia al Secretario por plazo vencido.')" class="btn-secondary" style="color: #dc2626;" title="Re-Oficiar">
                                                 🔄 Re-Oficiar
@@ -412,7 +413,7 @@
 
                     <div class="drop-zone" onclick="simulateOCR()">
                         <div style="width: 56px; height: 56px; background: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; color: var(--brand-600);">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
                         </div>
                         <h3 style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 4px;">Suelte aquí el archivo PDF del Oficio / Cargo</h3>
                         <p style="font-size: 11px; color: #94a3b8; margin-bottom: 16px;">Soporta PDF nativos digitalmente y documentos escaneados (OCR)</p>
@@ -428,7 +429,7 @@
                 </div>
 
                 <!-- FICHA DE EXTRAÍDOS -->
-                <div id="ocr-form" class="card-container hidden" style="padding: 24px; border-color: #93c5fd;">
+                <div id="ocr-form" class="card-container" style="padding: 24px; border-color: #93c5fd;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
                         <h3 style="font-size: 14px; font-weight: 700; color: #1e3a8a;">✓ Ficha de Datos Extraídos por Motor OCR</h3>
                         <span class="badge-status status-green">Confianza de Lectura: 98.4%</span>
@@ -468,7 +469,7 @@
                         <div style="grid-column: span 2;">
                             <label style="font-size: 11px; font-weight: 700; color: #475569;">7. Situación</label>
                             <select class="form-control" style="font-weight: 700;">
-                                <option selected>Emitido (Por defecto)</option>
+                                <option selected="">Emitido (Por defecto)</option>
                                 <option>Diligenciado</option>
                                 <option>Concluido</option>
                             </select>
@@ -482,7 +483,7 @@
             </section>
 
             <!-- P-06: BANDEJA DE EMITIDOS CON CHECKBOX MASIVO -->
-            <section id="P-06" class="screen-section hidden">
+            <section id="P-06" class="screen-section">
                 <h1 style="font-size: 20px; font-weight: 800; margin-bottom: 4px;">Bandeja de Emitidos</h1>
                 <p style="font-size: 12px; color: #64748b; margin-bottom: 20px;">Asigne el usuario autorizado (Secretario Judicial o Juez) para la firma del oficio.</p>
                 <div class="card-container">
@@ -644,19 +645,121 @@
                 </div>
             </section>
 
-            <!-- P-08: BANDEJA DE FIRMADOS Y CARGO -->
+            <!-- P-08: BANDEJA DE FIRMADOS Y CARGO (RESTRUCTURADA SEGÚN ESPECIFICACIÓN) -->
             <section id="P-08" class="screen-section hidden">
-                <h1 style="font-size: 20px; font-weight: 800; margin-bottom: 4px;">Firmados y Carga de Cargo </h1>
-                <p style="font-size: 12px; color: #64748b; margin-bottom: 20px;">Adjunte el acuse de recibo. El motor OCR extraerá la fecha y cambiará el estado a Diligenciado.</p>
-                <div class="card-container" style="padding: 32px; text-align: center;">
-                    <div class="drop-zone" style="border-color: #a7f3d0; background: #ecfdf5;" onclick="navigate('P-09')">
-                        <div style="width: 48px; height: 48px; background: #d1fae5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px auto; color: #059669;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-                        </div>
-                        <h3 style="font-size: 14px; font-weight: 700; color: #065f46;">Subir Cargo de Recepción de la Entidad</h3>
-                        <p style="font-size: 11px; color: #047857; margin-top: 4px;">Actualiza el estado a "Diligenciado" e inicia cómputo de 10 días.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div>
+                        <h1 style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">Firmados y Carga de Cargos</h1>
+                        <p style="font-size: 12px; color: #64748b;">«Administre los oficios firmados, descargue los documentos y registre los cargos de recepción».</p>
                     </div>
-                    <button type="button" onclick="navigate('P-09')" class="btn-primary" style="background:#059669; margin-top: 16px;">Adjuntar Cargo y Pasar a Seguimiento (P-09)</button>
+                </div>
+
+                <!-- TABLA CONSOLIDADA P-08 CON 10 COLUMNAS -->
+                <div class="card-container">
+                    <div class="card-header">
+                        <div class="card-title">Oficios Firmados Pendientes de Diligenciamiento</div>
+                        <span class="badge-status status-blue">Bandeja Asistente Judicial</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="table-p08">
+                            <thead>
+                                <tr>
+                                    <th>1. N.º Oficio</th>
+                                    <th>2. N.º Expediente</th>
+                                    <th>3. Juzgado Emisor</th>
+                                    <th>4. Asunto</th>
+                                    <th>5. Destinatario</th>
+                                    <th>6. Usuario que Firmó</th>
+                                    <th>7. Fecha de Firma</th>
+                                    <th>8. Estado / Situación</th>
+                                    <th>9. Documento Firmado</th>
+                                    <th>10. Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="p08-tbody">
+                                <!-- REGISTRO PRUEBA 1 -->
+                                <tr id="row-OF-2026-092-JCC">
+                                    <td style="font-weight: 700; color: var(--brand-600);">OF-2026-092-JCC</td>
+                                    <td style="font-weight: 600;">EXP-0340-2026-CI</td>
+                                    <td>1er Juzgado Conciliación</td>
+                                    <td>Solicitud de informe de liquidación</td>
+                                    <td><strong>Banco de la Nación - Tacna</strong></td>
+                                    <td>Dr. Roberto Torres<br><span style="font-size:10px; color:#64748b;">(Secretario Judicial)</span></td>
+                                    <td>02/11/2026 11:20</td>
+                                    <td><span id="status-OF-2026-092-JCC" class="badge-status status-blue">FIRMADO</span></td>
+                                    <td>
+                                        <button type="button" onclick="downloadSignedPdf('OF-2026-092-JCC')" class="btn-secondary" style="color:#1d4ed8;">
+                                            📥 OF-2026-092-JCC_Signed.pdf
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div id="actions-OF-2026-092-JCC" class="btn-action-group">
+                                            <button type="button" onclick="downloadSignedPdf('OF-2026-092-JCC')" class="btn-secondary" title="Descargar PDF con firma digital intacta">
+                                                ⬇️ Descargar
+                                            </button>
+                                            <button type="button" onclick="openCargoUploadModal('OF-2026-092-JCC', 'EXP-0340-2026-CI', 'Banco de la Nación - Tacna', '02/11/2026')" class="btn-primary" style="background:#2563eb;">
+                                                📤 Subir Cargo
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- REGISTRO PRUEBA 2 -->
+                                <tr id="row-OF-2026-093-JCC">
+                                    <td style="font-weight: 700; color: var(--brand-600);">OF-2026-093-JCC</td>
+                                    <td style="font-weight: 600;">EXP-0410-2026-CI</td>
+                                    <td>2do Juzgado Conciliación</td>
+                                    <td>Constancia de no adeudo e historial</td>
+                                    <td><strong>RENIEC Tacna</strong></td>
+                                    <td>Dra. Carmen Mendoza<br><span style="font-size:10px; color:#64748b;">(Juez Especializado)</span></td>
+                                    <td>02/11/2026 15:45</td>
+                                    <td><span id="status-OF-2026-093-JCC" class="badge-status status-blue">FIRMADO</span></td>
+                                    <td>
+                                        <button type="button" onclick="downloadSignedPdf('OF-2026-093-JCC')" class="btn-secondary" style="color:#1d4ed8;">
+                                            📥 OF-2026-093-JCC_Signed.pdf
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div id="actions-OF-2026-093-JCC" class="btn-action-group">
+                                            <button type="button" onclick="downloadSignedPdf('OF-2026-093-JCC')" class="btn-secondary">
+                                                ⬇️ Descargar
+                                            </button>
+                                            <button type="button" onclick="openCargoUploadModal('OF-2026-093-JCC', 'EXP-0410-2026-CI', 'RENIEC Tacna', '03/11/2026')" class="btn-primary" style="background:#2563eb;">
+                                                📤 Subir Cargo
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- REGISTRO PRUEBA 3 -->
+                                <tr id="row-OF-2026-094-JCC">
+                                    <td style="font-weight: 700; color: var(--brand-600);">OF-2026-094-JCC</td>
+                                    <td style="font-weight: 600;">EXP-0512-2026-CI</td>
+                                    <td>1er Juzgado Conciliación</td>
+                                    <td>Inspección de titularidad registral</td>
+                                    <td><strong>SUNARP Zona VIII</strong></td>
+                                    <td>Dr. Roberto Torres<br><span style="font-size:10px; color:#64748b;">(Secretario Judicial)</span></td>
+                                    <td>03/11/2026 09:10</td>
+                                    <td><span id="status-OF-2026-094-JCC" class="badge-status status-blue">FIRMADO</span></td>
+                                    <td>
+                                        <button type="button" onclick="downloadSignedPdf('OF-2026-094-JCC')" class="btn-secondary" style="color:#1d4ed8;">
+                                            📥 OF-2026-094-JCC_Signed.pdf
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div id="actions-OF-2026-094-JCC" class="btn-action-group">
+                                            <button type="button" onclick="downloadSignedPdf('OF-2026-094-JCC')" class="btn-secondary">
+                                                ⬇️ Descargar
+                                            </button>
+                                            <button type="button" onclick="openCargoUploadModal('OF-2026-094-JCC', 'EXP-0512-2026-CI', 'SUNARP Zona VIII', '03/11/2026')" class="btn-primary" style="background:#2563eb;">
+                                                📤 Subir Cargo
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
@@ -731,6 +834,61 @@
         </main>
     </div>
 
+    <!-- MODAL ESPECÍFICO DE CARGA Y EXTRACCIÓN OCR DE CARGO (P-08) -->
+    <div id="cargo-ocr-modal" class="modal-overlay hidden">
+        <div class="modal-content" style="max-width: 650px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 16px;">
+                <div>
+                    <h3 style="font-size: 15px; font-weight: 800; color: #0f172a;">Subir Cargo de Recepción de la Entidad</h3>
+                    <p style="font-size: 11px; color: #64748b;" id="modal-cargo-oficio-info">Asociado a Oficio: OF-2026-092-JCC</p>
+                </div>
+                <button type="button" onclick="closeCargoModal()" style="background: none; border: none; font-size: 18px; cursor: pointer; color: #64748b;">✕</button>
+            </div>
+
+            <div id="modal-step-upload">
+                <div class="drop-zone" onclick="triggerCargoOCR()" style="padding: 24px; border-color: #93c5fd; background: #f0f9ff; margin-bottom: 16px;">
+                    <div style="width: 44px; height: 44px; background: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px auto; color: #2563eb;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    </div>
+                    <h4 style="font-size: 13px; font-weight: 700; color: #1e293b;">Arrastre o seleccione el Cargo de Recepción en PDF</h4>
+                    <p style="font-size: 11px; color: #64748b; margin-top: 2px;">El archivo será vinculado obligatoriamente a este oficio.</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="button" onclick="triggerCargoOCR()" class="btn-primary" style="background:#1d4ed8; width: 100%; justify-content: center; padding: 10px;">
+                        ⚙️ PROCESAR CARGO CON OCR
+                    </button>
+                </div>
+            </div>
+
+            <!-- RESULTADO DEL PROCESAMIENTO OCR EN EL MODAL -->
+            <div id="modal-step-ocr-result" class="hidden" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px; margin-top: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <span class="badge-status status-amber" id="ocr-status-badge">Estado: CARGO POR VALIDAR</span>
+                    <span style="font-size: 10px; color: #059669; font-weight: 700;">✓ Escaneo de Sello y Firma de Entidad</span>
+                </div>
+
+                <div style="background: white; border: 1px dashed #bfdbfe; border-radius: 6px; padding: 12px; margin-bottom: 16px;">
+                    <p style="font-size: 11px; font-weight: 700; color: #475569; margin-bottom: 4px;">Vista previa de archivo adjuntado:</p>
+                    <p id="cargo-filename-preview" style="font-size: 12px; font-weight: 700; color: #1e293b;">📄 Cargo_Recepcionado_BN_Signed.pdf</p>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 12px;">
+                    <label style="color: #1e3a8a;">Fecha de Recepción Efectiva (Extraída por OCR)</label>
+                    <input type="date" id="extracted-reception-date" class="form-control" style="font-size: 13px; font-weight: 700; border-color: #2563eb; color: #1e293b;">
+                    <p style="font-size: 10px; color: #64748b; margin-top: 4px;">* Corresponde a la fecha del sello de recepción de la entidad de destino. Puede editar manualmente en caso de ajuste.</p>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px;">
+                    <button type="button" onclick="closeCargoModal()" class="btn-secondary">Cancelar</button>
+                    <button type="button" onclick="confirmCargoRegistration()" class="btn-primary" style="background:#059669;">
+                        ✓ Confirmar y Actualizar a DILIGENCIADO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL DE PREVISUALIZACIÓN DE PDFS -->
     <div id="pdf-modal" class="modal-overlay hidden">
         <div class="modal-content">
@@ -739,7 +897,7 @@
                 <button type="button" onclick="closePdfModal()" style="background: none; border: none; font-size: 18px; cursor: pointer; color: #64748b;">✕</button>
             </div>
             <div style="background: #f1f5f9; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 40px; text-align: center; margin-bottom: 16px;">
-                <svg id="modal-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" style="margin: 0 auto 12px auto;"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <svg id="modal-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" style="margin: 0 auto 12px auto;"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
                 <p id="pdf-file-name" style="font-weight: 700; font-size: 13px; color: #1e293b;">Oficio_Digitalizado_Signed.pdf</p>
                 <p id="pdf-file-desc" style="font-size: 11px; color: #64748b; margin-top: 4px;">Documento digitalizado con firma digital y cargo de recepción incorporado.</p>
             </div>
@@ -752,6 +910,12 @@
 
     <!-- SCRIPT SPA E INTERACTIVIDAD -->
     <script>
+        // ESTADO GLOBAL DE TRANSICIÓN PARA P-08 Y P-09
+        window.activeCargoOficio = null;
+        window.activeCargoExpediente = null;
+        window.activeCargoDestinatario = null;
+        window.activeCargoFechaFirma = null;
+
         window.navigate = function(screenId) {
             var sections = document.querySelectorAll('.screen-section');
             for (var i = 0; i < sections.length; i++) {
@@ -774,6 +938,105 @@
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
         };
+
+        // FUNCIONALIDAD P-08: DESCARGA DE OFICIO FIRMADO PRESERVANDO FIRMA
+        window.downloadSignedPdf = function(oficioNum) {
+            alert('📥 Descargando ' + oficioNum + '_Signed.pdf\n\n- Integredad de Firma Digital: Verificada (VÁLIDA)\n- Fecha de descarga registrada en auditoría del sistema.');
+        };
+
+        // FUNCIONALIDAD P-08: APERTURA Y PROCESAMIENTO OCR DE CARGO DE RECEPCIÓN
+        window.openCargoUploadModal = function(oficioNum, exp, destinatario, fechaFirma) {
+            window.activeCargoOficio = oficioNum;
+            window.activeCargoExpediente = exp;
+            window.activeCargoDestinatario = destinatario;
+            window.activeCargoFechaFirma = fechaFirma;
+
+            document.getElementById('modal-cargo-oficio-info').innerText = 'Asociado a Oficio: ' + oficioNum + ' | ' + exp + ' (' + destinatario + ')';
+            document.getElementById('modal-step-upload').classList.remove('hidden');
+            document.getElementById('modal-step-ocr-result').classList.add('hidden');
+            document.getElementById('cargo-ocr-modal').classList.remove('hidden');
+        };
+
+        window.closeCargoModal = function() {
+            document.getElementById('cargo-ocr-modal').classList.add('hidden');
+        };
+
+        window.triggerCargoOCR = function() {
+            document.getElementById('modal-step-upload').classList.add('hidden');
+            document.getElementById('modal-step-ocr-result').classList.remove('hidden');
+            
+            // Simulación OCR: Se extrae la fecha de recepción de la entidad de destino
+            document.getElementById('cargo-filename-preview').innerText = '📄 Cargo_' + window.activeCargoOficio + '_Recepcionado.pdf';
+            document.getElementById('extracted-reception-date').value = '2026-11-03';
+
+            // Actualiza provisionalmente estado visual a "CARGO POR VALIDAR"
+            var statusSpan = document.getElementById('status-' + window.activeCargoOficio);
+            if(statusSpan) {
+                statusSpan.className = 'badge-status status-amber';
+                statusSpan.innerText = 'CARGO POR VALIDAR';
+            }
+        };
+
+        // CONFIRMACIÓN DE CARGO: TRANSICIÓN A DILIGENCIADO Y TRANSFERENCIA A P-09 SEGUIMIENTO
+        window.confirmCargoRegistration = function() {
+            var oficioNum = window.activeCargoOficio;
+            var receptionDate = document.getElementById('extracted-reception-date').value;
+
+            if(!receptionDate) {
+                alert('⚠️ Por favor verifique o ingrese la fecha de recepción extraída por el OCR.');
+                return;
+            }
+
+            // 1. Actualizar estado en la tabla de P-08 a DILIGENCIADO (Verde)
+            var statusSpan = document.getElementById('status-' + oficioNum);
+            if(statusSpan) {
+                statusSpan.className = 'badge-status status-green';
+                statusSpan.innerText = 'DILIGENCIADO (' + receptionDate + ')';
+            }
+
+            // Actualizar botones de acción en P-08
+            var actionsDiv = document.getElementById('actions-' + oficioNum);
+            if(actionsDiv) {
+                actionsDiv.innerHTML = '<button type="button" onclick="openPdfModal(\'' + oficioNum + '\', \'recepcionado\')" class="btn-secondary" style="color:#059669; border-color:#a7f3d0;">👁️ Ver Cargo</button>' +
+                                       '<button type="button" onclick="navigate(\'P-09\')" class="btn-primary" style="background:#059669;">➡️ Ver en Seguimiento</button>';
+            }
+
+            // 2. Transferir registro a la tabla de P-09 Seguimiento e Iniciar Plazo de 10 días desde el día siguiente
+            transferToP09Seguimiento(oficioNum, window.activeCargoExpediente, window.activeCargoDestinatario, receptionDate);
+
+            closeCargoModal();
+            alert('✓ Cargo procesado exitosamente.\n- Estado actualizado: DILIGENCIADO.\n- Fecha de recepción validada: ' + receptionDate + '\n- Oficio transferido a P-09 Seguimiento (Cómputo de 10 días iniciado a partir del día siguiente).');
+        };
+
+        function transferToP09Seguimiento(oficioNum, expediente, destinatario, fechaRecepcion) {
+            var p09TableBody = document.querySelector('#P-09 table tbody');
+            if(!p09TableBody) return;
+
+            var newRow = document.createElement('tr');
+            newRow.innerHTML = 
+                '<td style="font-weight: 700; color: var(--brand-600);">' + oficioNum + '</td>' +
+                '<td style="font-weight: 600;">' + expediente + '</td>' +
+                '<td>Juzgado Conciliación</td>' +
+                '<td>Oficio Diligenciado en Destino</td>' +
+                '<td><strong>' + destinatario + '</strong></td>' +
+                '<td>' + window.activeCargoFechaFirma + '</td>' +
+                '<td>' + fechaRecepcion + '</td>' +
+                '<td>' +
+                    '<div class="timeline-bar-container">' +
+                        '<div class="timeline-bar" style="width: 10%; background-color: #059669;"></div>' +
+                    '</div>' +
+                    '<div class="timeline-text">1 día transcurrido (9d rest.)</div>' +
+                '</td>' +
+                '<td><span class="badge-status status-green">En Plazo (Día 1)</span></td>' +
+                '<td>' +
+                    '<div class="btn-action-group">' +
+                        '<button type="button" onclick="openPdfModal(\'' + oficioNum + '\', \'recepcionado\')" class="btn-secondary">👁️ Ver Cargo</button>' +
+                        '<button type="button" onclick="notifySecretary(\'' + oficioNum + '\', 1)" class="btn-secondary" style="opacity:0.6;">🔔 Notificar</button>' +
+                    '</div>' +
+                '</td>';
+
+            p09TableBody.insertBefore(newRow, p09TableBody.firstChild);
+        }
 
         window.simulateOCR = function() {
             var form = document.getElementById('ocr-form');
@@ -871,5 +1134,5 @@
             }
         });
     </script>
-</body>
-</html>
+
+</body></html>
